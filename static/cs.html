@@ -142,7 +142,7 @@ pre {
 				name:$("#chatbox").val()
 }
 	console.log(message);
-	$.post("http://localhost:5000/covid",JSON.stringify(message),function(response){
+	$.post("http://localhost:5000/cs",JSON.stringify(message),function(response){
 		lastUserMessage = document.getElementById("chatbox").value;
 	
     		document.getElementById("chatbox").value = "";
